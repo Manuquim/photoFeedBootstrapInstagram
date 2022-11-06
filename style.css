@@ -1,0 +1,15 @@
+p.tiny-text {
+    font-size: 0.75em; 
+}
+
+#cabecera{
+  font-size: 1.5em;
+}
+
+#miBotonGris { 
+  color: light-gray; 
+} 
+ 
+#miBotonAzul { 
+  color: rgb(2, 128, 254); 
+} 

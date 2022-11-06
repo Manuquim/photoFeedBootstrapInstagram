@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+   
+    <!-- Bootstrap CDN icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+   
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <title>Instagram photo feed</title>
+  </head>
+    <body>
+
+        <!-- NAVBAR-->
+        <div class="container-fluid">
+            <nav class="navbar navar-light d-flex">
+                <!--logo y brand-->
+                <a href="#" class="navbar navbar-brand mb-0 p-2 flex-grow-1">
+                    <p class="d-inline-block align-top">
+                    <i class="bi bi-instagram"></i>Instagram</p>
+                </a>          
+                <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Create a new post
+                    </button>
+  
+                    <!-- Modal Form -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <p class="modal-title fs-5 text-secondary h6" id="exampleModalLabel">Create a new post</p>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <label for="comment">Caption</label>
+                                    <div class="mb-1">
+                                        <label for="exampleFormControlTextarea1" class="form-label"></label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Add the caption of your post here"></textarea>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-camera-fill border px-1"></i>
+                                        <i class="bi bi-geo-alt-fill border px-1"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                <!--boton desplegable-->
+                    <div class="dropdown">
+                        <button type="button" title="desplegable" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="bi bi-gear"></i>
+                        </button>
+                        <!--Efecto dropdown-menu-end con menu hacia la izquierda-->
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>    
+        </div> 
+        <!-- Final NAVBAR-->
+
+         <!-- Botones cambio de página -->
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item m-2 p-0">
+                    <a class="page-link text-secondary p-0 border-0" href="index.html" aria-label="pagina index.html">
+                    <i class="bi bi-grid-3x3-gap" id="miBotonAzul"></i></a>
+                </li> 
+                <li class="page-item m-2 p-0">
+                    <a class="page-link text-secondary p-0 border-0" href="columna.html" aria-label="pagina column.html">
+                    <i class="bi bi-square-fill" id="miBotonGris"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <!--GALERIA DE IMAGENES EN COLUMNAS DE TRES -->
+        <div class="container-fluid">       
+            <div class="row gx-1 pb-2">               
+                <div class="col">
+                    <img src="https://cdn.pixabay.com/photo/2017/08/06/18/05/pumpkin-2594747__480.jpg" aria-label="Halloween" width="395" height="380">
+                </div>
+                <div class="col">
+                    <img src="https://cursos-idiomas-extranjero.com//content/imgsxml/textos_internos/halloween-2020.jpg" aria-label="Halloween" width="395" height="380">
+                </div>
+                <div class="col">
+                    <img src="https://cdn.pixabay.com/photo/2022/09/21/18/14/halloween-7470946__480.jpg" aria-label="Halloween" width="395" height="380">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row gx-1 pb-2">
+                <div class="col">
+                    <img src="https://cdn.pixabay.com/photo/2022/10/14/17/31/halloween-7521772__480.jpg" aria-label="Halloween" width="395" height="380">
+                </div>
+                <div class="col">
+                    <img src="https://cdn.pixabay.com/photo/2022/10/02/19/03/halloween-contest-7494247__480.jpg" aria-label="Halloween" width="395" height="380">
+                </div>
+                <div class="col">
+                    <img src="https://cdn.pixabay.com/photo/2018/09/27/20/23/halloween-3707858__480.jpg" aria-label="Halloween" width="395" height="380">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row gx-1 pb-4">
+                <div class="col">
+                    <img src="https://cdn.pixabay.com/photo/2016/10/09/18/06/candy-corn-1726481__480.jpg" aria-label="Halloween" width="395" height="380">
+                </div>
+                <div class="col">
+                    <img src="https://cdn.pixabay.com/photo/2017/05/19/20/55/pumpkin-2327488__480.jpg" aria-label="Halloween" width="395" height="380">
+                </div>
+                <div class="col">
+                    <img src="https://cdn.pixabay.com/photo/2017/10/27/18/05/halloween-2895016__480.jpg" aria-label="Halloween" width="395" height="380">
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- Popper.js, then Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
+    </body>
+</html>
